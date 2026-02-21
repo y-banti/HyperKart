@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HypeKart — Discover Viral & Premium Products</title>
+    <meta name="description"
+        content="Shop trending clothing, watches, accessories, electronics, and home essentials at HypeKart. Quality products for modern India.">
+    <meta name="keywords"
+        content="HypeKart, online shopping, clothing, watches, accessories, electronics, bottles, India">
+    <!-- Open Graph -->
+    <meta property="og:title" content="HypeKart — Discover Viral & Premium Products">
+    <meta property="og:description" content="Trending finds curated for modern living.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hypekart.in">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ── HEADER ──────────────────────────────────────────── -->
+    <header class="header" id="site-header">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo" aria-label="HypeKart Home">
+                    <span class="logo-hype">HYPE</span><span class="logo-kart">KART</span>
+                </a>
+                <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+                    <!-- Rendered by main.js -->
+                </nav>
+                <div class="nav-actions">
+                    <button class="nav-btn" id="search-btn" aria-label="Open search" title="Search">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                    </button>
+                    <button class="nav-btn" id="cart-btn" aria-label="Open cart">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <path d="M16 10a4 4 0 0 1-8 0" />
+                        </svg>
+                        <span class="cart-badge" id="cart-badge">0</span>
+                    </button>
+                    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ── MOBILE MENU ─────────────────────────────────────── -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav id="mobile-nav-links"><!-- Rendered by main.js --></nav>
+        <div class="mobile-actions">
+            <button class="btn-outline" id="mobile-search-btn" style="flex:1;padding:12px 20px;font-size:13px;">🔍
+                Search</button>
+            <button class="btn-primary" id="mobile-cart-btn" style="flex:1;padding:12px 20px;font-size:13px;">🛒
+                Cart</button>
+        </div>
+    </div>
+
+    <!-- ── SEARCH OVERLAY ─────────────────────────────────── -->
+    <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search">
+        <div class="search-header">
+            <div class="search-box">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                </svg>
+                <input type="text" id="search-input" placeholder="Search products, categories, tags…"
+                    autocomplete="off">
+            </div>
+            <button class="search-close" id="search-close" aria-label="Close search">✕</button>
+        </div>
+        <div class="search-results container" id="search-results">
+            <p class="search-hint">Start typing to discover products…</p>
+        </div>
+    </div>
+
+    <!-- ── CART DRAWER ─────────────────────────────────────── -->
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close" id="cart-close" aria-label="Close cart">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer" id="cart-footer" style="display:none;">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cart-total">₹0</strong>
+            </div>
+            <a href="#" class="btn-checkout" id="checkout-btn">Proceed to Checkout</a>
+            <button class="btn-clear-cart" id="clear-cart-btn">Clear cart</button>
+        </div>
+    </aside>
+
+    <!-- ── HERO ────────────────────────────────────────────── -->
+    <section class="hero" id="home" aria-label="Hero banner">
+        <div class="hero-shape s1" aria-hidden="true"></div>
+        <div class="hero-shape s2" aria-hidden="true"></div>
+        <div class="hero-shape s3" aria-hidden="true"></div>
+        <div class="hero-shape s4" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-eyebrow">🔥 New Arrivals Every Week</span>
+                <h1 class="hero-title">Discover Viral &amp;<br>Premium Products</h1>
+                <p class="hero-subtitle">Trending finds curated for modern living.</p>
+                <div class="hero-cta">
+                    <a href="#products-container" class="btn-primary">Explore Now →</a>
+                    <a href="#filter-bar" class="btn-outline">Browse All</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">18+</div>
+                        <div class="stat-label">Products</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">6</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">4.6★</div>
+                        <div class="stat-label">Avg Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">1.5k+</div>
+                        <div class="stat-label">Happy Buyers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FILTER BAR ──────────────────────────────────────── -->
+    <div class="filter-bar" id="filter-bar">
+        <div class="container">
+            <div class="filter-inner">
+                <div class="filter-group">
+                    <span class="filter-label">Category</span>
+                    <select class="filter-select" id="filter-category" aria-label="Filter by category">
+                        <option value="all">All</option>
+                    </select>
+                </div>
+                <div class="filter-divider"></div>
+                <div class="filter-group">
+                    <span class="filter-label">Price</span>
+                    <select class="filter-select" id="filter-price" aria-label="Filter by price">
+                        <option value="all">Any</option>
+                        <option value="0-999">Under ₹999</option>
+                        <option value="1000-1999">₹1,000–₹1,999</option>
+                        <option value="2000-3999">₹2,000–₹3,999</option>
+                        <option value="4000-99999">₹4,000+</option>
+                    </select>
+                </div>
+                <div class="filter-divider"></div>
+                <div class="filter-group">
+                    <span class="filter-label">Rating</span>
+                    <select class="filter-select" id="filter-rating" aria-label="Filter by rating">
+                        <option value="0">Any</option>
+                        <option value="4.5">4.5★ &amp; up</option>
+                        <option value="4">4★ &amp; up</option>
+                        <option value="3.5">3.5★ &amp; up</option>
+                    </select>
+                </div>
+                <div class="filter-divider"></div>
+                <div class="filter-group">
+                    <span class="filter-label">Sort</span>
+                    <select class="filter-select" id="filter-sort" aria-label="Sort products">
+                        <option value="default">Default</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="trending">Trending First</option>
+                    </select>
+                </div>
+                <button class="filter-reset" id="filter-reset">Reset</button>
+                <span class="filter-count" id="filter-count"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── MAIN CONTENT ────────────────────────────────────── -->
+    <main>
+        <!-- Filtered view (shown when filter active) -->
+        <section class="section filtered-view" id="filtered-view">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-eyebrow">Filtered Results</span>
+                        <h2 class="section-title" id="filtered-title">All Products</h2>
+                    </div>
+                </div>
+                <div class="product-grid" id="filtered-grid"></div>
+            </div>
+        </section>
+
+        <!-- Category sections (default view) -->
+        <div class="category-sections" id="products-container">
+            <!-- Rendered by main.js -->
+        </div>
+    </main>
+
+    <!-- ── FOOTER ──────────────────────────────────────────── -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><span>HYPE</span><span>KART</span></div>
+                    <p class="footer-tagline">Premium & viral products curated for modern India. Shop with confidence,
+                        delivered to your door.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram" title="Instagram">📸</a>
+                        <a href="#" class="social-link" aria-label="YouTube" title="YouTube">▶️</a>
+                        <a href="#" class="social-link" aria-label="Twitter" title="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp" title="WhatsApp">💬</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products-container">Shop All</a></li>
+                        <li><a href="#filter-bar" id="link-trending">🔥 Trending</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#" class="policy-link" data-policy="shipping">Shipping Info</a></li>
+                        <li><a href="#" class="policy-link" data-policy="returns">Returns Policy</a></li>
+                        <li><a href="#" class="policy-link" data-policy="faq">FAQ</a></li>
+                        <li><a href="#" class="policy-link" data-policy="contact">Contact Us</a></li>
+                        <li><a href="#" class="policy-link" data-policy="about">About HypeKart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p style="font-size:14px;color:#a8a29e;margin-bottom:16px;">Get notified of new drops and exclusive
+                        deals.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com"
+                            aria-label="Email address">
+                        <button class="newsletter-btn" id="newsletter-btn">→</button>
+                    </div>
+                    <p class="newsletter-success" id="newsletter-success">🎉 You're in! Thanks for subscribing.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 HypeKart. All rights reserved.</span>
+                <span>
+                    <a href="#" class="policy-link" data-policy="privacy">Privacy Policy</a>&nbsp;·&nbsp;
+                    <a href="#" class="policy-link" data-policy="terms">Terms of Service</a>
+                </span>
+                <span>Made with ❤️ in India</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ── POLICY MODAL ────────────────────────────────────── -->
+    <div class="modal-backdrop" id="policy-modal" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <div class="modal-box-header">
+                <h3 id="policy-title">Policy</h3>
+                <button class="cart-close" id="policy-close" aria-label="Close modal">✕</button>
+            </div>
+            <div class="modal-box-body" id="policy-body"></div>
+        </div>
+    </div>
+
+    <!-- ── TOAST ───────────────────────────────────────────── -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

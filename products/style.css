@@ -1,0 +1,335 @@
+/* Aesthetic Modern Design System */
+:root {
+    --bg-body: #F9F7F2;
+    /* Warm Cream */
+    --bg-card: #FFFFFF;
+    --text-primary: #1C1917;
+    /* Warm Black */
+    --text-secondary: #57534E;
+    /* Warm Gray */
+    --accent-color: #4A5D23;
+    /* Deep Olive Green */
+    --accent-hover: #364419;
+    --border-light: #E7E5E4;
+    --shadow-soft: 0 4px 20px rgba(74, 93, 35, 0.08);
+    /* Tinted Shadow */
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --radius-card: 16px;
+    --radius-btn: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* Sophisticated Header */
+.header {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 24px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Elegant Hero Section */
+.hero {
+    padding: 140px 0 100px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #F9F7F2, #FFFFFF);
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--text-primary);
+    color: #FFFFFF;
+    padding: 16px 48px;
+    border-radius: var(--radius-btn);
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 64px;
+    color: var(--text-primary);
+    font-style: italic;
+    /* Aesthetic touch */
+}
+
+/* Aesthetic Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.product-card {
+    background: transparent;
+    /* Clean look */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 0.85;
+    /* Taller, editorial aspect ratio */
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    position: relative;
+    /* Soft shadow behind image only */
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 24px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08);
+    /* Slow, elegant zoom */
+}
+
+/* Product Info - Minimal Layout */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Left aligned typically looks more 'editorial' */
+    padding: 0 8px;
+}
+
+.product-name {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.product-description-short {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-style: italic;
+}
+
+.product-rating-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.star {
+    color: #DAA520;
+    /* Muted Gold */
+    font-size: 14px;
+}
+
+.rating-count {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-family: var(--font-heading);
+}
+
+.product-price {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+/* Full Width Button - Elegant Style */
+.product-actions {
+    width: 100%;
+    margin-top: auto;
+}
+
+.btn-buy {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    background-color: white;
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-btn);
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-buy:hover {
+    background-color: var(--text-primary);
+    color: #FFFFFF;
+    border-color: var(--text-primary);
+}
+
+/* Footer */
+.footer {
+    background-color: #2D2D2D;
+    /* Dark Footer */
+    color: #F9F7F2;
+    padding: 80px 0 40px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+}
+
+.footer-section ul li a {
+    color: #A8A29E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: 16px 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}

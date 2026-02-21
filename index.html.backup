@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Imperial Store - Premium Online Shopping in India</title>
+    <meta name="description"
+        content="Shop premium clothing, watches, accessories, electronics, and home essentials at The Imperial Store. Quality products for modern India.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>THE IMPERIAL STORE</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home">Home</a>
+                    <a href="#clothing">Clothing</a>
+                    <a href="#watches">Watches</a>
+                    <a href="#accessories">Accessories</a>
+                    <a href="#electronics">Electronics</a>
+                    <a href="#home-essentials">Home</a>
+                    <a href="#bottles">Bottles</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Premium Products for Modern Living</h2>
+                <p class="hero-subtitle">Carefully curated collection of quality clothing, accessories, and essentials
+                </p>
+                <a href="#featured" class="btn-primary">Shop Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Product+1" alt="Featured Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Cotton Shirt</h3>
+                        <p class="product-price">₹1,299</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Product+2" alt="Featured Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Analog Watch</h3>
+                        <p class="product-price">₹2,499</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Product+3" alt="Featured Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Leather Messenger Bag</h3>
+                        <p class="product-price">₹3,999</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Product+4" alt="Featured Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Wireless Earbuds</h3>
+                        <p class="product-price">₹1,799</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clothing Section -->
+    <section class="section section-gray" id="clothing">
+        <div class="container">
+            <h2 class="section-title">Clothing Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Shirt" alt="Cotton Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Cotton Shirt</h3>
+                        <p class="product-price">₹1,299</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=T-Shirt" alt="Casual T-Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Casual T-Shirt</h3>
+                        <p class="product-price">₹699</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Jeans" alt="Denim Jeans">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Slim Fit Jeans</h3>
+                        <p class="product-price">₹1,999</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Jacket" alt="Casual Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Casual Jacket</h3>
+                        <p class="product-price">₹2,799</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Polo" alt="Polo Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Polo Shirt</h3>
+                        <p class="product-price">₹1,499</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Hoodie" alt="Hoodie">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Comfort Hoodie</h3>
+                        <p class="product-price">₹1,899</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch Section -->
+    <section class="section" id="watches">
+        <div class="container">
+            <h2 class="section-title">Watch Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Watch+1" alt="Analog Watch">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Analog Watch</h3>
+                        <p class="product-price">₹2,499</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Watch+2" alt="Smart Watch">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Smart Watch Pro</h3>
+                        <p class="product-price">₹4,999</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Watch+3" alt="Digital Watch">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Digital Sports Watch</h3>
+                        <p class="product-price">₹1,799</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Watch+4" alt="Luxury Watch">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Luxury Timepiece</h3>
+                        <p class="product-price">₹8,999</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section class="section section-gray" id="accessories">
+        <div class="container">
+            <h2 class="section-title">Accessories</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Bag+1" alt="Messenger Bag">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Leather Messenger Bag</h3>
+                        <p class="product-price">₹3,999</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Bag+2" alt="Backpack">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Travel Backpack</h3>
+                        <p class="product-price">₹2,499</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Wallet" alt="Wallet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Leather Wallet</h3>
+                        <p class="product-price">₹1,299</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Belt" alt="Belt">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Leather Belt</h3>
+                        <p class="product-price">₹899</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Sunglasses" alt="Sunglasses">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Aviator Sunglasses</h3>
+                        <p class="product-price">₹1,599</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Cap" alt="Cap">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Baseball Cap</h3>
+                        <p class="product-price">₹699</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electronics Section -->
+    <section class="section" id="electronics">
+        <div class="container">
+            <h2 class="section-title">Electronics</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Earbuds" alt="Wireless Earbuds">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Wireless Earbuds</h3>
+                        <p class="product-price">₹1,799</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Headphones" alt="Headphones">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bluetooth Headphones</h3>
+                        <p class="product-price">₹2,999</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Speaker" alt="Portable Speaker">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Portable Speaker</h3>
+                        <p class="product-price">₹2,499</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Charger" alt="Power Bank">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fast Charging Power Bank</h3>
+                        <p class="product-price">₹1,499</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Essentials Section -->
+    <section class="section section-gray" id="home-essentials">
+        <div class="container">
+            <h2 class="section-title">Home Essentials</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Cushion" alt="Cushion">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Decorative Cushion</h3>
+                        <p class="product-price">₹599</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Lamp" alt="Table Lamp">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Modern Table Lamp</h3>
+                        <p class="product-price">₹1,299</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Frame" alt="Photo Frame">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Photo Frame</h3>
+                        <p class="product-price">₹799</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Candle" alt="Scented Candle">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Scented Candle Set</h3>
+                        <p class="product-price">₹899</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Organizer" alt="Desk Organizer">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Desk Organizer</h3>
+                        <p class="product-price">₹699</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Plant" alt="Indoor Plant">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Indoor Plant with Pot</h3>
+                        <p class="product-price">₹499</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottle Collection Section -->
+    <section class="section" id="bottles">
+        <div class="container">
+            <h2 class="section-title">Bottle Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Bottle+1" alt="Steel Bottle">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Stainless Steel Bottle</h3>
+                        <p class="product-price">₹599</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Bottle+2" alt="Insulated Bottle">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Insulated Water Bottle</h3>
+                        <p class="product-price">₹899</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Bottle+3" alt="Sports Bottle">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sports Sipper Bottle</h3>
+                        <p class="product-price">₹499</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/300x300/e5e7eb/6b7280?text=Bottle+4" alt="Glass Bottle">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Glass Bottle</h3>
+                        <p class="product-price">₹799</p>
+                        <button class="btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>The Imperial Store offers premium quality products for modern living. Shop with confidence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#clothing">Clothing</a></li>
+                        <li><a href="#watches">Watches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#shipping">Shipping Info</a></li>
+                        <li><a href="#returns">Returns</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: support@imperialstore.in</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Address: Mumbai, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Imperial Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

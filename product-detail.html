@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details — HYPEKART</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="detail-page">
+
+    <!-- Shared Header (same as index.html) -->
+    <header class="header" id="site-header">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-hype">HYPE</span><span class="logo-kart">KART</span>
+                </a>
+                <nav class="nav-links" id="nav-links"></nav>
+                <div class="nav-actions">
+                    <button class="nav-btn" id="search-btn">🔍</button>
+                    <button class="nav-btn" id="cart-btn">
+                        🛒 <span class="cart-badge" id="cart-badge">0</span>
+                    </button>
+                    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav id="mobile-nav-links"></nav>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-header">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-close">✕</button>
+        </div>
+        <div id="search-results" class="container"></div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="cart-close">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer" id="cart-footer">
+            <div class="cart-total">Total: <span id="cart-total">₹0</span></div>
+            <button class="btn-primary" style="width:100%">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- DYNAMIC CONTENT ROOT -->
+    <main id="product-detail-root">
+        <div class="loading-state container" style="padding: 100px 0; text-align: center;">
+            <div class="skeleton" style="width: 200px; height: 30px; margin: 0 auto 20px;"></div>
+            <div class="skeleton" style="width: 100%; height: 500px; border-radius: 32px;"></div>
+        </div>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo"><span class="logo-hype">HYPE</span><span class="logo-kart">KART</span></div>
+                    <p>Viral products, premium quality.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#" class="policy-link" data-policy="shipping">Shipping</a>
+                    <a href="#" class="policy-link" data-policy="returns">Returns</a>
+                    <a href="#" class="policy-link" data-policy="privacy">Privacy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>support@hypekart.in</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal and Toasts -->
+    <div class="modal-backdrop" id="policy-modal">
+        <div class="modal-box">
+            <h3 id="policy-title"></h3>
+            <div id="policy-body"></div>
+            <button id="policy-close">Close</button>
+        </div>
+    </div>
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
