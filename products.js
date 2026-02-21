@@ -262,6 +262,23 @@ const products = [
         shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
         sku: 'HK-ELE-002'
     },
+    {
+        id: 'elec-3',
+        name: 'External NVMe M.2 Sata SSD Enclosure USB 3.1',
+        price: 799,
+        category: 'electronics',
+        rating: 4.5,
+        reviewCount: 20,
+        description: 'External NVMe M.2 Sata SSD Enclosure USB 3.1',
+        features: ['External NVMe M.2 Sata SSD Enclosure USB 3.1', 'High-Speed Data Transfer', 'Easy Installation', 'Compact Design', 'Durable Build'],
+        images: ['images/Screenshot 2026-02-21 204554.png'],
+        sizes: [],
+        colors: ['#3b82f6', '#ffffff'],
+        tags: ['electronics', 'SSD', 'NVMe', 'M.2', 'Sata', 'USB 3.1'],
+        isTrending: false,
+        shopifyLink: 'https://www.amazon.in/dp/B08PV4P1VS?coliid=I3QC5S20XOWGDM&colid=2I80HD7L764S&th=1&linkCode=ll2&tag=hypekart-21&linkId=858e2c06a29cdb85f79b92c27fb5a91a&ref_=as_li_ss_tl',
+        sku: 'HK-ELE-003'
+    },
 
     // ── HOME ESSENTIALS ───────────────────────────────────
     {
@@ -292,7 +309,7 @@ const products = [
         reviewCount: 75,
         description: 'Large capacity dual-use water bottle with straw and direct drink spout. Perfect for gym and travel.',
         features: ['1 Litre Capacity', 'Dual Drink Modes', 'Leak-proof Seal', 'BPA Free', 'Easy Grip Handle'],
-        images: ['Bott.png', 'https://placehold.co/600x600/7dd3fc/0369a1?text=Side+View'],
+        images: ['images/Bott.png', 'https://placehold.co/600x600/7dd3fc/0369a1?text=Side+View'],
         sizes: [],
         colors: ['#a855f7', '#22c55e'],
         tags: ['bottles', 'water bottle', 'gym', 'travel', '1000ml', 'dual use'],
@@ -309,7 +326,7 @@ const products = [
         reviewCount: 144,
         description: 'Cute aesthetic water bottle with lid and straw. Comes with stickers. A must-have for students.',
         features: ['700ml Capacity', 'Kawaii Design', 'Stickers Included', 'Straw Sipper', 'Carry Strap'],
-        images: ['Bottle.png', 'https://placehold.co/600x600/7dd3fc/0369a1?text=Kawaii+Bottle'],
+        images: ['images/Bottle.png', 'https://placehold.co/600x600/7dd3fc/0369a1?text=Kawaii+Bottle'],
         sizes: [],
         colors: ['#f472b6', '#a78bfa'],
         tags: ['bottles', 'kawaii', 'cute', 'water bottle', 'students', 'aesthetic'],
@@ -326,7 +343,7 @@ const products = [
         reviewCount: 75,
         description: 'Stylish borosilicate glass water bottle with straw. Durable, eco-friendly and perfect for daily use.',
         features: ['Borosilicate Glass', 'Straw Included', 'Leak-proof', 'Heat Resistant', 'Eco-friendly'],
-        images: ['bot3.png', 'https://placehold.co/600x600/7dd3fc/0369a1?text=Glass+Bottle'],
+        images: ['images/bot3.png', 'https://placehold.co/600x600/7dd3fc/0369a1?text=Glass+Bottle'],
         sizes: [],
         colors: ['#6ee7b7', '#93c5fd'],
         tags: ['bottles', 'glass bottle', 'straw', 'eco-friendly', 'daily use'],
