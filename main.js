@@ -214,7 +214,7 @@ function doSearch(query, container) {
 
 // ─── PRODUCT CARD COMPONENT ───────────────────────────────────
 function renderProductCard(p) {
-  const hasLink = p.shopifyLink && !p.shopifyLink.startsWith('INSERT');
+  // Every product is now an affiliate product
   return `
       <article class="product-card" data-id="${p.id}">
         <div class="product-image-wrap">
@@ -223,7 +223,7 @@ function renderProductCard(p) {
                  onerror="this.src='https://placehold.co/400x400/ede9e2/888?text=${encodeURIComponent(p.name)}'">
           </a>
           ${p.isTrending ? '<span class="badge badge-trending">🔥 Trending</span>' : ''}
-          ${hasLink ? '<span class="badge badge-affiliate" style="top:auto;bottom:12px">Affiliate</span>' : ''}
+          <span class="badge badge-affiliate" style="top:auto;bottom:12px">Affiliate</span>
         </div>
         <div class="product-info">
           <h3 class="product-name"><a href="product-detail.html?id=${p.id}">${p.name}</a></h3>
@@ -235,9 +235,9 @@ function renderProductCard(p) {
           <p class="product-desc-short">${p.description}</p>
           <div class="product-actions">
             <a href="product-detail.html?id=${p.id}" class="btn-view">View Details</a>
-            ${hasLink
-      ? `<a href="${p.shopifyLink}" target="_blank" rel="noopener noreferrer" class="btn-buy-card">Buy Now</a>`
-      : `<button class="btn-buy-card add-to-cart-btn" data-id="${p.id}">Add to Cart</button>`}
+            <a href="${p.shopifyLink}" target="_blank" rel="noopener noreferrer" class="btn-buy-card">
+              ${p.shopifyLink.includes('amazon') ? 'Buy on Amazon' : 'Buy Now'}
+            </a>
           </div>
         </div>
       </article>`;
@@ -367,23 +367,7 @@ function renderHomePage() {
   // Initial HTML with placeholders
   let html = '';
 
-  // 1. Trending Section
-  if (trending.length > 0) {
-    html += `
-      <section class="section section-trending reveal" id="trending-now">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-title-wrap">
-              <span class="section-eyebrow">🔥 Hot Right Now</span>
-              <h2 class="section-title">Trending This Week</h2>
-            </div>
-          </div>
-          <div id="grid-trending" class="skeleton-placeholder"></div>
-        </div>
-      </section>`;
-  }
-
-  // 2. Category Sections
+  // Render Category Sections
   html += cats.map((c, i) => `
       <section class="section ${i % 2 === 0 ? 'section-alt' : ''} reveal" id="section-${c}">
         <div class="container">
@@ -398,16 +382,6 @@ function renderHomePage() {
       </section>`).join('');
 
   container.innerHTML = html;
-
-  // Render Trending Content
-  if (trending.length > 0) {
-    const trendingGrid = qs('#grid-trending');
-    renderSkeletons(trendingGrid, 4);
-    setTimeout(() => {
-      trendingGrid.innerHTML = `<div class="product-grid">${trending.map(renderProductCard).join('')}</div>`;
-      attachCardEvents(trendingGrid);
-    }, 150);
-  }
 
   // Render Category Content
   cats.forEach((c, i) => {
@@ -527,7 +501,7 @@ function initProductDetailPage() {
              <div class="color-swatches">${p.colors.map((c, i) => `<button class="color-swatch ${i === 0 ? 'active' : ''}" style="background:${c}" data-color="${c}" aria-label="Color ${c}"></button>`).join('')}</div>
            </div>` : '';
 
-  const sampleReviews = [
+  const reviewsToDisplay = p.reviews || [
     { name: 'Aryan S.', avatar: 'A', rating: 5, title: 'Absolutely love it!', text: 'Exceeded my expectations!' },
     { name: 'Priya M.', avatar: 'P', rating: 4, title: 'Very good purchase', text: 'Looks exactly like the pictures.' }
   ];
@@ -570,10 +544,9 @@ function initProductDetailPage() {
               ${colorHtml}
 
               <div class="detail-actions">
-                ${hasLink
-      ? `<a href="${p.shopifyLink}" target="_blank" class="detail-buy">Shop via Partner →</a>`
-      : `<button class="detail-buy add-to-cart-btn" data-id="${p.id}">Add to Shopping Bag — ${fmt(p.price)}</button>`
-    }
+                <a href="${p.shopifyLink}" target="_blank" class="detail-buy">
+                  ${p.shopifyLink.includes('amazon') ? 'Buy on Amazon' : 'Buy Now'} — ${fmt(p.price)}
+                </a>
               </div>
 
               <ul class="detail-features">
@@ -609,7 +582,7 @@ function initProductDetailPage() {
             </div>
             <div class="reviews-list">
               <h3 style="font-size:32px; margin-bottom:40px;">What our customers say</h3>
-              ${sampleReviews.map(r => `
+              ${reviewsToDisplay.map(r => `
                 <div class="review-card">
                   <div class="review-header">
                     <div class="reviewer-avatar">${r.avatar}</div>

@@ -3,6 +3,7 @@
 // ============================================================
 
 const categoryMeta = {
+    trending: { label: 'Trending Deals', icon: '🔥', navLabel: 'Trending' },
     clothing: { label: 'Clothing Collection', icon: '👗', navLabel: 'Clothing' },
     watches: { label: 'Watch Collection', icon: '⌚', navLabel: 'Watches' },
     accessories: { label: 'Accessories', icon: '👜', navLabel: 'Accessories' },
@@ -32,8 +33,12 @@ const products = [
         colors: ['#fbbf24', '#3b82f6', '#ec4899'],
         tags: ['clothing', 'co-ord', 'printed', 'casual', 'women', 'set'],
         isTrending: true,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
-        sku: 'HK-CLO-001'
+        shopifyLink: 'https://www.amazon.in/s?k=Printed+Co-ord+Set&tag=hypekart-21',
+        sku: 'HK-CLO-001',
+        reviews: [
+            { name: 'Ananya R.', avatar: 'A', rating: 5, title: 'Stunning fit!', text: 'The fabric is so breathable and the print is even prettier in person.' },
+            { name: 'Rohan K.', avatar: 'R', rating: 4, title: 'Good value', text: 'Nice set for the price. Fits perfectly.' }
+        ]
     },
     {
         id: 'clothing-2',
@@ -49,7 +54,7 @@ const products = [
         colors: ['#000000', '#1f2937', '#4b5563'],
         tags: ['clothing', 'pants', 'combo', 'office', 'casual'],
         isTrending: false,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Combo+Stylish+Pants&tag=hypekart-21',
         sku: 'HK-CLO-002'
     },
     {
@@ -66,7 +71,7 @@ const products = [
         colors: ['#374151', '#9ca3af'],
         tags: ['clothing', 'shorts', 'cotton', 'combo', 'summer'],
         isTrending: true,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Combo+Cotton+Shorts&tag=hypekart-21',
         sku: 'HK-CLO-003'
     },
     {
@@ -83,7 +88,7 @@ const products = [
         colors: ['#1e3a8a', '#000000'],
         tags: ['clothing', 'shorts', 'stretchable', 'athletic', 'combo'],
         isTrending: false,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Combo+Stretchable+Shorts&tag=hypekart-21',
         sku: 'HK-CLO-004'
     },
     {
@@ -100,7 +105,7 @@ const products = [
         colors: ['#3b82f6', '#10b981', '#ef4444', '#000000'],
         tags: ['clothing', 'shorts', 'combo', 'value pack', 'stretchable'],
         isTrending: true,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Combo+4+Stretchable+Shorts+Pack&tag=hypekart-21',
         sku: 'HK-CLO-005'
     },
     {
@@ -117,7 +122,7 @@ const products = [
         colors: ['#78350f'],
         tags: ['clothing', 'cargo', 'trouser', 'casual', 'utility'],
         isTrending: false,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Brown+Cargo+Trouser&tag=hypekart-21',
         sku: 'HK-CLO-006'
     },
 
@@ -136,8 +141,12 @@ const products = [
         colors: ['#fbbf24'],
         tags: ['watches', 'casio', 'vintage', 'digital', 'gold', 'retro'],
         isTrending: true,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
-        sku: 'HK-WAT-001'
+        shopifyLink: 'https://www.amazon.in/s?k=Casio+Vintage+Gold+Watch&tag=hypekart-21',
+        sku: 'HK-WAT-001',
+        reviews: [
+            { name: 'Vikram S.', avatar: 'V', rating: 5, title: 'Classic look', text: 'Takes me back to the 90s. The gold finish is very premium.' },
+            { name: 'Megha P.', avatar: 'M', rating: 5, title: 'Love it!', text: 'Water resistant and very durable. I wear it every day.' }
+        ]
     },
     {
         id: 'watch-2',
@@ -153,7 +162,7 @@ const products = [
         colors: ['#9ca3af'],
         tags: ['watches', 'luxury', 'stainless steel', 'automatic', 'premium'],
         isTrending: false,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Luxury+Stainless+Steel+Watch&tag=hypekart-21',
         sku: 'HK-WAT-002'
     },
     {
@@ -170,7 +179,7 @@ const products = [
         colors: ['#d1d5db'],
         tags: ['watches', 'silver', 'minimalist', 'business', 'men'],
         isTrending: false,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Men+Silver+Strap+Watch&tag=hypekart-21',
         sku: 'HK-WAT-003'
     },
     {
@@ -187,7 +196,7 @@ const products = [
         colors: ['#3f2c25'],
         tags: ['watches', 'analog', 'leather', 'men', 'classic'],
         isTrending: true,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Men+Analog+Leather+Watch&tag=hypekart-21',
         sku: 'HK-WAT-004'
     },
 
@@ -206,7 +215,7 @@ const products = [
         colors: ['#000000', '#ec4899'],
         tags: ['accessories', 'backpack', 'cat', 'cute', 'bag', 'kawaii'],
         isTrending: true,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Cat+Printed+Backpack&tag=hypekart-21',
         sku: 'HK-ACC-001'
     },
     {
@@ -223,7 +232,7 @@ const products = [
         colors: ['#ffffff', '#fde8f3'],
         tags: ['accessories', 'bag', 'plush', 'cute', 'kawaii', 'lamb'],
         isTrending: true,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Cute+Lamb+Plush+Bag&tag=hypekart-21',
         sku: 'HK-ACC-002'
     },
 
@@ -242,7 +251,7 @@ const products = [
         colors: ['#000000', '#ffffff'],
         tags: ['electronics', 'headphones', 'wireless', 'bluetooth', 'audio', 'ANC'],
         isTrending: true,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Wireless+Headphones+ANC&tag=hypekart-21',
         sku: 'HK-ELE-001'
     },
     {
@@ -259,7 +268,7 @@ const products = [
         colors: ['#3b82f6', '#ffffff'],
         tags: ['electronics', 'toothbrush', 'electric', 'dental', 'hygiene', 'sonic'],
         isTrending: false,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Sonic+Electric+Toothbrush&tag=hypekart-21',
         sku: 'HK-ELE-002'
     },
     {
@@ -295,28 +304,33 @@ const products = [
         colors: ['#9ca3af', '#d1d5db'],
         tags: ['home', 'laundry', 'basket', 'foldable', 'essentials', 'storage'],
         isTrending: false,
-        shopifyLink: 'INSERT_SHOPIFY_LINK_HERE',
+        shopifyLink: 'https://www.amazon.in/s?k=Foldable+Laundry+Basket&tag=hypekart-21',
         sku: 'HK-HOM-001'
+    },
+    {
+        id: 'home-2',
+        name: 'Cute Cat Touch Silicone Night Lamp',
+        price: 429,
+        category: 'trending',
+        rating: 4.5,
+        reviewCount: 100,
+        description: 'Cute cat touch silicone night lamp. Perfect for bedrooms and living rooms.',
+        features: ['USB Rechargeable Multicolor Night Light for Kids Bedroom, Romantic Decor, Valentine Day Gift, Love Gift for Her, Couple Gift'],
+        images: ['images/Screenshot 2026-02-22 103231.png',
+            'images/Screenshot 2026-02-22 103302.png'],
+        sizes: [],
+        colors: ['#9ca3af', '#d1d5db'],
+        tags: ['home', 'night lamp', 'cat', 'silicone', 'cute', 'kawaii'],
+        isTrending: true,
+        shopifyLink: 'https://www.amazon.in/One94Store-Cute-Touch-Silicone-Night/dp/B0FLDWNNR5?pf_rd_r=4TZXDP1FXJ7BSJAQ6BQ2&pf_rd_p=cf160230-fa58-41b5-b22b-79b5ceb27cd7&th=1&linkCode=ll2&tag=hypekart-21&linkId=5bdf45b0ec7a6a23af20a9c90362b343&ref_=as_li_ss_tl',
+        sku: 'HK-HOM-002',
+        reviews: [
+            { name: 'Ishaan T.', avatar: 'I', rating: 5, title: 'So cute!', text: 'My daughter loves it. The touch sensor works perfectly.' },
+            { name: 'Sanya L.', avatar: 'S', rating: 4, title: 'Great gift', text: 'Bought this for a friend and she absolutely loved it. Very soft silicone.' }
+        ]
     },
 
     // ── BOTTLES ───────────────────────────────────────────
-    {
-        id: 'bottle-1',
-        name: '2 in 1 Water Bottle 1000ml',
-        price: 799,
-        category: 'bottles',
-        rating: 4.6,
-        reviewCount: 75,
-        description: 'Large capacity dual-use water bottle with straw and direct drink spout. Perfect for gym and travel.',
-        features: ['1 Litre Capacity', 'Dual Drink Modes', 'Leak-proof Seal', 'BPA Free', 'Easy Grip Handle'],
-        images: ['images/Bott.png', 'https://placehold.co/600x600/7dd3fc/0369a1?text=Side+View'],
-        sizes: [],
-        colors: ['#a855f7', '#22c55e'],
-        tags: ['bottles', 'water bottle', 'gym', 'travel', '1000ml', 'dual use'],
-        isTrending: true,
-        shopifyLink: 'https://aqrrw7-x3.myshopify.com/products/2-in-1-water-bottle-for-hot-and-cold-drinks-with-double-straws-and-cover-1000-ml-bottle?variant=53265182097776',
-        sku: 'HK-BOT-001'
-    },
     {
         id: 'bottle-2',
         name: '700ml Kawaii Water Bottle',
@@ -331,26 +345,9 @@ const products = [
         colors: ['#f472b6', '#a78bfa'],
         tags: ['bottles', 'kawaii', 'cute', 'water bottle', 'students', 'aesthetic'],
         isTrending: true,
-        shopifyLink: 'https://aqrrw7-x3.myshopify.com/products/700ml-kawaii-water-bottle-with-lid-and-straw?variant=53261258981744',
+        shopifyLink: '',
         sku: 'HK-BOT-002'
     },
-    {
-        id: 'bottle-3',
-        name: 'Over Glass Water Bottle with Straw',
-        price: 499,
-        category: 'bottles',
-        rating: 4.5,
-        reviewCount: 75,
-        description: 'Stylish borosilicate glass water bottle with straw. Durable, eco-friendly and perfect for daily use.',
-        features: ['Borosilicate Glass', 'Straw Included', 'Leak-proof', 'Heat Resistant', 'Eco-friendly'],
-        images: ['images/bot3.png', 'https://placehold.co/600x600/7dd3fc/0369a1?text=Glass+Bottle'],
-        sizes: [],
-        colors: ['#6ee7b7', '#93c5fd'],
-        tags: ['bottles', 'glass bottle', 'straw', 'eco-friendly', 'daily use'],
-        isTrending: false,
-        shopifyLink: 'https://aqrrw7-x3.myshopify.com/products/over-glass-water-bottle-with-straw?variant=53265182065008',
-        sku: 'HK-BOT-003'
-    }
 ];
 
 // Helper: get product by ID
