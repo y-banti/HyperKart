@@ -40,6 +40,7 @@ const products = [
             { name: 'Rohan K.', avatar: 'R', rating: 4, title: 'Good value', text: 'Nice set for the price. Fits perfectly.' }
         ]
     },
+    
     {
         id: 'clothing-2',
         name: 'Combo Stylish Pants',
@@ -124,6 +125,30 @@ const products = [
         isTrending: false,
         shopifyLink: 'https://www.amazon.in/s?k=Brown+Cargo+Trouser&tag=hypekart-21',
         sku: 'HK-CLO-006'
+    },
+    {
+        id: 'clothing-7',
+        name: 'SWAGR 12 Pairs Sports Cotton Ankle',
+        price: 176,
+        category: 'trending',
+        rating: 4.8,
+        reviewCount: 120,
+        description: 'SWAGR 12 Pairs Sports Cotton Ankle Socks for Men and Women. Perfect for sports, gym, or casual wear.',
+        features: ['12 Pairs', 'Cotton Blend', 'Comfortable Fit', 'Moisture Absorbent', 'Machine Washable'],
+        images: [
+            'images/81biKixsaDL._SY606_.jpg'
+        ],
+        sizes: ['S', 'M', 'L', 'XL'],
+        colors: ['#374151', '#1e3a8a'],
+        tags: ['clothing', 'socks', 'sports', 'cotton', 'men-women'],
+        isTrending: false,
+        shopifyLink: 'https://amzn.to/3N6c3xg',
+        sku: 'HK-CLO-1A',
+        reviews: [
+            { name: 'Rahul S.', avatar: 'R', rating: 5, title: 'Great Quality!', text: 'These socks are so comfortable and the cotton blend is perfect for sports.' },
+            { name: 'Priya M.', avatar: 'P', rating: 4, title: 'Good Value', text: '12 pairs for a reasonable price. Very satisfied with the purchase.' },
+            { name: 'Sanya L.', avatar: 'S', rating: 5, title: 'Perfect for Gym', text: 'I bought these for my workouts and they are fantastic. No slipping and very breathable.' }
+        ]
     },
 
     // ── WATCHES ───────────────────────────────────────────
